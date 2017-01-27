@@ -70,6 +70,8 @@ public class Articulo {
     //venta verifica la existencia antes de restar existencias y devuelve 
     //un valor booleano que verifica si se realiza la venta
     public boolean venta(int cantidadVenta){
+        //El ciclo verifica que existan articulos a los que se les pueda
+        //restar la cantidad vendida
         if (existencia >= cantidadVenta){
             this.existencia -= cantidadVenta;
             return true;
