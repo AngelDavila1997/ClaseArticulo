@@ -20,9 +20,9 @@ public class Articulo {
     //Se inicializan los atributos de la clase
     public Articulo(int sku, int existencia, double precio, double costo, String descripcion){
         this.sku = sku;
-        this.existencia = 0;
+        this.existencia = existencia;
         this.precio = precio;
-        this.costo = 0;
+        this.costo = costo;
         this.descripcion= descripcion;
     }
     public Articulo(){//Este constructor llama al otro constructor para predefinir los datos de la cuenta
