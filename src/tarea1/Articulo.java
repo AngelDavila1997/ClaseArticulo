@@ -20,9 +20,9 @@ public class Articulo {
     //Se inicializan los atributos de la clase
     public Articulo(int sku, int existencia, double precio, double costo, String descripcion){
         this.sku = sku;
-        this.existencia = existencia;
+        this.existencia = 0;
         this.precio = precio;
-        this.costo = costo;
+        this.costo = 0;
         this.descripcion= descripcion;
     }
     public Articulo(){//Este constructor llama al otro constructor para predefinir los datos de la cuenta
@@ -82,7 +82,6 @@ public class Articulo {
     }
     //verificarExistencia devuelve el valor del atributo existencia
     public int verificarExistencia(){
-        System.out.println("Este articulo tiene una existencia de " + existencia);
         return this.existencia;
     }
     //actualizaPrecio modifica el atributo precio
