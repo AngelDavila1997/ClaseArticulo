@@ -36,7 +36,7 @@ public class Tarea1 {
         miOtroArticulo.verificarExistencia();
         //Se venderan 12 articulos (como no hay suficientes se muestra un mensaje)
         miOtroArticulo.venta(12);
-        //Se actualiza el precio del articulo
+        //Se actualiza el precio del articulo (Antes era 25)
         miOtroArticulo.actualizaPrecio(18.00);
     }
     public static void prueba (Articulo a){
